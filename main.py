@@ -13,7 +13,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
       if self.path.find('/paste?') != -1:
         try:
           token = self.path[self.path.find('/paste?')+7:]
-          resp = db.get('/data', token)
+          resp = db.get('/data', token).encode('utf-8')
           self.send_response(200, 'Paste Found')
           self.send_header('Content-type', 'text/html')
           self.end_headers()
