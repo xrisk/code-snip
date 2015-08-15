@@ -2,4 +2,4 @@ html, body{height:100%;width:100%;text-align:center;overflow:hidden;}
 .main{margin-top:5%;}
 textarea{width:100%;font-family:Consolas, Courier;height:300px;}
 code{text-align:left;}
-a{text-decoration:none;color:black;}
+a{text-decoration:none;color:black;transition: all 0.2s;}
