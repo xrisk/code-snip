@@ -10,6 +10,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
   
   def do_GET(self):
       print self.path
+      
       if self.path.find('/paste?') != -1:
         try:
           token = self.path[self.path.find('/paste?')+7:]

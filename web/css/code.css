@@ -1,6 +1,7 @@
 html, body
 {
   height:100%;width:100%;text-align:center;
+  
 }
 
 .main
@@ -11,4 +12,10 @@ html, body
 code
 {
   text-align:left;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
 }
